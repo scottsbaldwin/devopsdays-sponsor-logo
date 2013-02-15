@@ -16,6 +16,7 @@ Usage
 ---------------
 
 start local webserver
+    
     ruby sponsor.rb
 
 hit a URL to make a logo, using a link to the company's logo in the URL, eg:
@@ -30,3 +31,4 @@ TODO
   * CLI version?
   * convert to sRGB if logo has embedded ICC profile
   * Host it somewhere free?
+  * Get more sleep
