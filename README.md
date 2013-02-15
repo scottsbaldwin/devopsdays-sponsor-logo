@@ -29,3 +29,4 @@ ToDo
   * Allow local image to be uploaded
   * CLI version?
   * convert to sRGB if logo has embedded ICC profile
+  * Host it somewhere free?
