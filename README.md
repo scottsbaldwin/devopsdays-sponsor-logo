@@ -20,10 +20,10 @@ start local webserver
 
 hit a URL to make a logo, using a link to the company's logo in the URL, eg:
 
-    curl http://localhost:4567/render/
+    http://localhost:4567/render/https://dl.dropbox.com/u/327815/softserve.png
     
 
-ToDo
+TODO
 -----
 
   * Allow local image to be uploaded
