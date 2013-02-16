@@ -6,10 +6,9 @@ A command line app for generating logos for devopsdays sponsors
 Installing
 -------------------
 
-#### Gem install
 
-install dependencies
-
+    git clone git://github.com/agoddard/devopsdays-sponsor-logo.git
+    cd devopsdays-sponsor-logo
     bundle install
 
 Usage
