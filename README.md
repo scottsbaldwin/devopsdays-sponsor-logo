@@ -1,34 +1,28 @@
 devopsdays-sponsor-logo
 ========
-A sinatra app for generating logos for devopsdays sponsors
+A command line app for generating logos for devopsdays sponsors
 
 
 Installing
 -------------------
 
-#### Gem install
 
-install dependencies
-
+    git clone git://github.com/agoddard/devopsdays-sponsor-logo.git
+    cd devopsdays-sponsor-logo
     bundle install
 
 Usage
 ---------------
 
-start local webserver
+Pass a local image with -f or a uri with -u to render.rb, optionally specify the output filename with -o
     
-    ruby sponsor.rb
+    ./render.rb -f /path/to/file.png -o output.png
+    ./render.rb -u http://example.com/image.png -o output.png
 
-hit a URL to make a logo, using a link to the company's logo in the URL, eg:
-
-    http://localhost:4567/render/https://dl.dropbox.com/u/327815/softserve.png
-    
 
 TODO
 -----
 
-  * Allow local image to be uploaded
-  * CLI version?
   * convert to sRGB if logo has embedded ICC profile
-  * Host it somewhere free?
+  * web version & host it somewhere free?
   * Get more sleep
