@@ -1,0 +1,12 @@
+#!/bin/bash
+set -ex
+
+IN_FILE=$1
+BASE=$(echo ${IN_FILE} | sed -e 's/\..*$//')
+
+cp square-old.png square.png
+ruby render.rb -f in/${IN_FILE} -o out/${BASE}.png
+cp out/${BASE}.png ~/src/devopsdays-webby/site/content/events/2016-austin/logos
+cp square-new.png square.png
+ruby render.rb -f in/${IN_FILE} -o out/${BASE}.png
+cp out/${BASE}.png ~/src/atxdevops.github.io/images/sponsors/2016
